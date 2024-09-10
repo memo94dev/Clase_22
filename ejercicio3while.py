@@ -8,14 +8,13 @@ O presione "0" para salir!:
                           
 """))
     if (ejercicio == 1):
-
-        """
+        print(f"""
         1- En una tienda se ha establecido la siguiente oferta: por 
         compras menores a 100.000 se hace un descuento de 8%, pero 
         para compras a partir de 100.000 el descuento es de 10%. Se 
         pide ingresar la cantidad y el precio del producto que se compra 
         y determinar cuánto se descontará y cuanto se cobrará.
-        """
+        """)
         compra = int(input("Ingrese el valor de la compra: "))
         if (compra >= 0):
             print("Valor incorrecto!")
@@ -31,8 +30,7 @@ O presione "0" para salir!:
             print("El total a pagar sera de: ",pago)
 
     elif (ejercicio == 2):
-        
-        """
+        print(f"""
         2- Una empresa quiere hacer una compra de varias piezas de la 
         misma clase en una fábrica de refacciones. La empresa 
         dependiendo del monto total de la compra decidirá qué hacer 
@@ -46,7 +44,7 @@ O presione "0" para salir!:
         restante 30% lo pagará solicitando crédito al fabricante.
         El fabricante cobra por concepto de intereses un 20% sobre la 
         cantidad que se le pague a crédito.
-        """
+        """)
 
         MONTO_MAXIMO = 500000
         compra = int(input("Ingrese el monto total de la compra: "))
@@ -72,14 +70,13 @@ O presione "0" para salir!:
         """)
 
     elif (ejercicio == 3):
-
-        """
+        print(f"""
         3- Un vendedor recibe un sueldo base más un 10% extra por 
         comisión de sus ventas, el vendedor desea saber cuánto dinero 
         obtendrá por concepto de comisiones por las tres ventas que 
         realiza en el mes y el total que recibirá en el mes tomando en 
         cuenta su sueldo base más comisiones.
-        """
+        """)
 
         venta1 = int(input("Valor de la venta: "))
         venta2 = int(input("Valor de la venta: "))
@@ -93,12 +90,11 @@ O presione "0" para salir!:
     """)
 
     elif (ejercicio == 4):
-
-        """
+        print(f"""
         4- Una tienda ofrece un descuento del 15% sobre el total de la 
         compra, y un cliente desea saber cuánto deberá pagar finalmente 
         sobre su compra.
-        """
+        """)
 
         compra = int(input("Ingrese el valor de su compra: "))
         descuento = compra * 0.15
@@ -111,11 +107,10 @@ O presione "0" para salir!:
     """)
         
     elif (ejercicio == 5):
-
-        """
+        print(f"""
         5- Calcular el nuevo salario de un obrero si obtuvo un incremento 
         del 25% sobre su salario anterior.
-        """
+        """)
 
         salario = int(input("Ingrese el salario del obrero: "))
         incremento = salario * 0.25
@@ -126,12 +121,11 @@ O presione "0" para salir!:
     """)
         
     elif (ejercicio == 6):
-
-        """
+        print(f"""
         6- Leer dos números, si son iguales que se multipliquen, si el 
         primero es mayor que el segundo que se resten y sino que se 
         sumen.
-        """
+        """)
         num1 = int(input("Introduzca un numero cualquiera: "))
         num2 = int(input("Introduzca un numero cualquiera: "))
         if (num1 == num2):
@@ -142,8 +136,7 @@ O presione "0" para salir!:
             print("El primer valor es menor, se realizara una suma: ",num1 + num2)
 
     elif (ejercicio == 7):
-
-        """
+        print(f"""
         7- El IPS quiere clasificar a las personas que se jubilarán en el año 
         2017. Existen tres tipos de jubilaciones, por edad, por antigüedad 
         joven y por antigüedad adulta. Las personas para la jubilación por 
@@ -154,7 +147,7 @@ O presione "0" para salir!:
         más.
         Las personas para antigüedad adulta deben tener 60 años o más 
         y una antigüedad en su empleo de 25 años o más.
-        """
+        """)
         edad = int(input("Ingrese su edad: "))
         antiguedad = int(input("Ingrese su antiguedad: "))
         if (edad >= 60) and (antiguedad < 25):
@@ -165,8 +158,7 @@ O presione "0" para salir!:
             print("Se le dara una jubilacion por antiguedad adulta")
 
     elif (ejercicio == 8):
-
-        """
+        print(f"""
         8- En una tienda se efectúa una promoción en la cual se hace un 
         descuento sobre el valor de la cuenta total, según el color de la 
         bolilla que el cliente saque al pagar en caja. Si la bolilla es de 
@@ -175,7 +167,7 @@ O presione "0" para salir!:
         es roja un 100%. Determinar la cantidad final que el cliente 
         deberá pagar por su compra. Se sabe que sólo hay bolillas de los 
         colores mencionados.
-        """
+        """)
 
         import random
         compra = int(input("Ingrese el valor de la compra: "))
@@ -191,13 +183,12 @@ O presione "0" para salir!:
         """)
 
     elif (ejercicio == 9):
-
-        """
+        print(f"""
         9- Ingresar dos valores en las variables “maximo” y “minimo” y 
         luego ingresar un valor en la variable “temperatura”. Imprime un 
         mensaje si el valor de temperatura no está dentro del rango de 
         marcado por minimo y maximo
-        """
+        """)
 
         maximo = int(input("Ingrese un valor maximo: "))
         minimo = int(input("Ingrese un valor minimo: "))
